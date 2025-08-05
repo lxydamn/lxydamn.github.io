@@ -1,0 +1,105 @@
+# Site
+title: Blog
+subtitle: ''
+description: ''
+keywords:
+author: Lxy
+language: zh-CN
+timezone: 'Asia/Shanghai'
+email: lxy2914344878@163.com
+
+# Code blocks
+code_blocks:
+  theme: darker
+  macStyle: true
+  height_limit: false
+  word_wrap: true
+
+# Favicon
+favicon: /img/avatar.jpeg
+
+
+# URL
+url: https://lxydamn.github.io
+permalink: :year/:month/:day/:title/
+permalink_defaults:
+pretty_urls:
+  trailing_index: false   # ✅ 推荐设为 false，去掉 index.html
+  trailing_html: false    # ✅ 推荐设为 false，去掉 .html
+
+cover:
+  # 是否显示文章封面
+  index_enable: true
+  aside_enable: true
+  archives_enable: true
+  default_cover:
+
+# Directory
+source_dir: source
+public_dir: public
+tag_dir: tags
+archive_dir: archives
+category_dir: categories
+code_dir: downloads/code
+i18n_dir: :lang
+skip_render:
+
+# Writing
+new_post_name: :title.md
+default_layout: post
+titlecase: false
+external_link:
+  enable: true
+  field: site
+  exclude: ''
+filename_case: 0
+render_drafts: false
+
+# ✅ 开启每篇文章独立资源目录（用于放置图片）
+post_asset_folder: true
+
+relative_link: false
+future: true
+syntax_highlighter: highlight.js
+highlight:
+  line_number: true
+  auto_detect: false
+  tab_replace: ''
+  wrap: true
+  hljs: false
+prismjs:
+  preprocess: true
+  line_number: true
+  tab_replace: ''
+
+# 首页设置
+index_generator:
+  path: ''
+  per_page: 10
+  order_by: -date
+
+# Metadata
+meta_generator: true
+
+# Date/Time
+date_format: YYYY-MM-DD
+time_format: HH:mm:ss
+updated_option: 'mtime'
+
+# Pagination
+per_page: 10
+pagination_dir: page
+
+# Include/Exclude
+include:
+exclude:
+ignore:
+
+# Theme
+theme: butterfly
+
+# ✅ 部署配置（以 GitHub Pages 为例）
+deploy:
+  type: git
+  repo: https://github.com/lxydamn/lxydamn.github.io.git
+  branch: gh-pages

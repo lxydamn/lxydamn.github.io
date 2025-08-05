@@ -1,0 +1,31 @@
+# Avatar
+avatar:
+  img: /img/avatar.jpeg
+  effect: false
+
+default_top_img: 'linear-gradient(135deg, #f0f8ff, #87cefa)'
+footer_img: true
+# Nav
+nav:
+  logo:
+  display_title: true
+  display_post_title: true
+  fixed: false
+
+menu:
+  Home: / || fas fa-home
+  Categories: /categories/ || fas fa-folder-open
+  About: /about/ || fas fa-heart
+
+aside:
+  card_announcement:
+    # 是否显示公告卡片
+    enable: false
+  card_author:
+    enable: true
+    description:
+    button:
+      enable: true
+      icon: fab fa-github
+      text: Follow Me
+      link: https://github.com/lxydamn
