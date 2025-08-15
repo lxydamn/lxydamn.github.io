@@ -57,8 +57,10 @@ render_drafts: false
 
 # ✅ 开启每篇文章独立资源目录（用于放置图片）
 post_asset_folder: true
+marked:
+  prependRoot: true
+  postAsset: true
 
-relative_link: false
 future: true
 syntax_highlighter: highlight.js
 highlight:
