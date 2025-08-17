@@ -1,11 +1,11 @@
 # Site
 title: Blog
-subtitle: ''
-description: ''
+subtitle: ""
+description: ""
 keywords:
 author: Lxy
 language: zh-CN
-timezone: 'Asia/Shanghai'
+timezone: "Asia/Shanghai"
 email: lxy2914344878@163.com
 
 # Code blocks
@@ -18,14 +18,13 @@ code_blocks:
 # Favicon
 favicon: /img/avatar.jpeg
 
-
 # URL
 url: https://lxydamn.github.io
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
-  trailing_index: false   # ✅ 推荐设为 false，去掉 index.html
-  trailing_html: false    # ✅ 推荐设为 false，去掉 .html
+  trailing_index: false # ✅ 推荐设为 false，去掉 index.html
+  trailing_html: false # ✅ 推荐设为 false，去掉 .html
 
 cover:
   # 是否显示文章封面
@@ -51,7 +50,7 @@ titlecase: false
 external_link:
   enable: true
   field: site
-  exclude: ''
+  exclude: ""
 filename_case: 0
 render_drafts: false
 
@@ -66,17 +65,17 @@ syntax_highlighter: highlight.js
 highlight:
   line_number: true
   auto_detect: false
-  tab_replace: ''
+  tab_replace: "    "
   wrap: true
   hljs: false
 prismjs:
   preprocess: true
   line_number: true
-  tab_replace: ''
+  tab_replace: "    "
 
 # 首页设置
 index_generator:
-  path: ''
+  path: ""
   per_page: 10
   order_by: -date
 
@@ -86,7 +85,7 @@ meta_generator: true
 # Date/Time
 date_format: YYYY-MM-DD
 time_format: HH:mm:ss
-updated_option: 'mtime'
+updated_option: "mtime"
 
 # Pagination
 per_page: 10
@@ -99,6 +98,12 @@ ignore:
 
 # Theme
 theme: butterfly
+
+search:
+  path: search.json
+  field: post
+  content: true
+  format: striptags
 
 # ✅ 部署配置（以 GitHub Pages 为例）
 deploy:

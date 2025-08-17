@@ -3,8 +3,12 @@ avatar:
   img: /img/avatar.jpeg
   effect: false
 
-default_top_img: 'linear-gradient(135deg, #f0f8ff, #87cefa)'
+default_top_img: "linear-gradient(135deg, #f0f8ff, #87cefa)"
 footer_img: true
+share:
+  # 选择：sharejs / addtoany
+  # 如果不需要分享功能，保持为空
+  use:
 # Nav
 nav:
   logo:
@@ -29,3 +33,37 @@ aside:
       icon: fab fa-github
       text: Follow Me
       link: https://github.com/lxydamn
+search:
+  # Choose: algolia_search / local_search / docsearch
+  # leave it empty if you don't need search
+  use: local_search
+  placeholder: "Search..."
+
+# Local Search
+local_search:
+  # Preload the search data when the page loads.
+  preload: false
+  # Show top n results per article, show all results by setting to -1
+  top_n_per_article: 3
+  # Unescape html strings to the readable one.
+  unescape: false
+  CDN:
+
+copy:
+  enable: true
+  # Add the copyright information after copied content
+  copyright:
+    enable: true
+    limit_count: 100
+note:
+  # Note tag style values:
+  #  - simple    bs-callout old alert style. Default.
+  #  - modern    bs-callout new (v2-v3) alert style.
+  #  - flat      flat callout style with background, like on Mozilla or StackOverflow.
+  #  - disabled  disable all CSS styles import of note tag.
+  style: simple
+  icons: true
+  border_radius: 3
+  # Offset lighter of background in % for modern and flat styles (modern: -12 | 12; flat: -18 | 6).
+  # Offset also applied to label tag variables. This option can work with disabled note tag.
+  light_bg_offset: 0
