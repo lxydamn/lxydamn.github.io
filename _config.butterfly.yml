@@ -17,9 +17,64 @@ nav:
   fixed: false
 
 menu:
-  Home: / || fas fa-home
-  Categories: /categories/ || fas fa-folder-open
-  About: /about/ || fas fa-heart
+  首页: / || fas fa-home
+  分类: /categories/ || fas fa-folder-open
+  标签: /tags/ || fas fa-tags
+
+post_meta:
+  # 主页页面
+  page:
+    # 日期类型: created / updated / both
+    date_type: both
+    # 日期格式: date / relative
+    date_format: date
+    # 是否显示分类
+    categories: true
+    # 是否显示标签
+    tags: false
+    # 是否显示文字标签
+    label: true
+  # 文章页面
+  post:
+    # 元数据位置: left / center
+    position: left
+    # 日期类型: created / updated / both
+    date_type: both
+    # 日期格式: date / relative
+    date_format: date
+    # 是否显示分类
+    categories: true
+    # 是否显示标签
+    tags: true
+    # 是否显示文字标签
+    label: true
+
+# 首页的副标题设置
+subtitle:
+  # 是否启用副标题
+  enable: true
+  # 是否启用打字机效果
+  effect: true
+
+toc:
+  # 是否在文章中显示目录
+  post: true
+  # 是否在页面中显示目录
+  page: false
+  # 是否显示目录编号
+  number: true
+  # 是否默认展开目录
+  expand: true
+  # 是否使用简洁风格（仅适用于文章）
+  style_simple: false
+  # 是否显示滚动百分比
+  scroll_percent: true
+
+post_copyright:
+  # 是否启用版权声明
+  enable: false
+  # 是否进行文章 URL 解码
+  decode: false
 
 aside:
   card_announcement:
@@ -44,7 +99,7 @@ local_search:
   # Preload the search data when the page loads.
   preload: false
   # Show top n results per article, show all results by setting to -1
-  top_n_per_article: 3
+  top_n_per_article: 5
   # Unescape html strings to the readable one.
   unescape: false
   CDN:
@@ -55,6 +110,7 @@ copy:
   copyright:
     enable: true
     limit_count: 100
+
 note:
   # Note tag style values:
   #  - simple    bs-callout old alert style. Default.
@@ -67,3 +123,25 @@ note:
   # Offset lighter of background in % for modern and flat styles (modern: -12 | 12; flat: -18 | 6).
   # Offset also applied to label tag variables. This option can work with disabled note tag.
   light_bg_offset: 0
+
+# A simple 404 page
+error_404:
+  enable: true
+  subtitle: "页面没有找到"
+  background:
+
+mermaid:
+  # 是否启用 Mermaid
+  enable: true
+  # 使用代码块编写 Mermaid 图表
+  code_write: false
+  # 内置主题: default / forest / dark / neutral
+  theme:
+    light: default
+    dark: dark
+
+snackbar:
+  enable: true
+  position: bottom-left
+  bg_light: "#49b1f5" #light mode时弹窗背景
+  bg_dark: "#2d3035" #dark mode时弹窗背景
