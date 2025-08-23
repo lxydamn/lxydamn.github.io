@@ -1,0 +1,37 @@
+{
+  "posts": [
+    {
+      "title": "基于AOP、MyBatis的通用查询增强",
+      "date": "2025-08-17",
+      "tags": [
+        "AOP",
+        "MyBatis"
+      ],
+      "categories": [
+        "业务增强"
+      ],
+      "url": "https://lxydamn.github.io/2025/08/17/cross-query/"
+    },
+    {
+      "title": "SpringWeb请求通用加密组件",
+      "date": "2025-08-22",
+      "tags": [
+        "Spring",
+        "加密"
+      ],
+      "categories": [
+        "业务增强"
+      ],
+      "url": "https://lxydamn.github.io/2025/08/22/spring-web-encrypt/"
+    }
+  ],
+  "tags": [
+    "AOP",
+    "MyBatis",
+    "Spring",
+    "加密"
+  ],
+  "categories": [
+    "业务增强"
+  ]
+}
