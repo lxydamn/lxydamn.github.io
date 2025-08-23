@@ -63,6 +63,32 @@ body {
   display: table-cell;
 }
 
-@media screen and (max-width: 768px) {
-  
+#article-summary-card { 
+  background: linear-gradient(45deg, rgb(94, 209, 232), #32567e);
+  border-radius: 20px;
+  padding: 2px; /* 控制边框宽度 */
+  margin-bottom: 20px;
+}
+
+#article-summary {
+  background: var(--card-bg);
+  border-radius: 18px; /* 略小于外层以显示边框效果 */
+  padding: 20px;
+}
+
+#summary-title {
+  font-size: 1.5em;
+}
+
+#summary-content code {
+  font-family: 'Maple';
+  font-size: 1em;
+  padding: 0.2em 0.4em;
+  color: #38a4fc;
+  border-radius: 5px;
+  background: #d7d6d6;
+  margin: 0 0.2em;
+}
+[data-theme='dark'] #summary-content code { 
+  background: #2c2c2c;
 }
