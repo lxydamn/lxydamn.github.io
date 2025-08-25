@@ -1,9 +1,8 @@
 # Avatar
 avatar:
-  img: /img/avatar.jpeg
+  img: /img/avatar.jpg
   effect: false
 
-default_top_img: "linear-gradient(135deg, #f0f8ff, #87cefa)"
 footer_img: true
 share:
   # 选择：sharejs / addtoany
@@ -15,6 +14,8 @@ nav:
   display_title: true
   display_post_title: true
   fixed: false
+
+default_top_img: /img/2997.jpg
 
 menu:
   首页: / || fas fa-home
@@ -81,7 +82,7 @@ aside:
     # 是否显示公告卡片
     enable: false
   card_author:
-    enable: true
+    enable: false
     description:
     button:
       enable: true
@@ -145,3 +146,20 @@ snackbar:
   position: bottom-left
   bg_light: "#49b1f5" #light mode时弹窗背景
   bg_dark: "#2d3035" #dark mode时弹窗背景
+
+inject:
+  head:
+    - <link rel="stylesheet" href="/css/lxy.css">
+  bottom:
+    - <script src="/js/style.js"></script>
+    - <script src="/js/renderGraph.js"></script>
+
+# 在首页显示文章简介
+# 1: 描述
+# 2: 两者（如果存在描述，将显示描述，否则显示自动摘要）
+# 3: 自动摘要（默认）
+# false: 不显示文章简介
+index_post_content:
+  method: 2
+  # 如果设置 method 为 2 或 3，需要配置长度
+  length: 300

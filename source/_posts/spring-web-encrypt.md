@@ -5,6 +5,8 @@ tags:
   - Spring
   - 加密
 description: 使用注解对Web请求进行统一加解密处理
+categories:
+  - 业务增强
 ---
 
 # 简要介绍
