@@ -1,0 +1,170 @@
+# Avatar
+avatar:
+  img: /img/avatar.png
+  effect: false
+
+footer_img: true
+share:
+  # 选择：sharejs / addtoany
+  # 如果不需要分享功能，保持为空
+  use:
+# Nav
+nav:
+  logo:
+  display_title: true
+  display_post_title: true
+  fixed: false
+
+default_top_img: /img/2997.jpg
+menu:
+  首页: / || fas fa-home
+  分类: /categories/ || fas fa-folder-open
+  标签: /tags/ || fas fa-tags
+
+post_meta:
+  # 主页页面
+  page:
+    # 日期类型: created / updated / both
+    date_type: created
+    # 日期格式: date / relative
+    date_format: date
+    # 是否显示分类
+    categories: true
+    # 是否显示标签
+    tags: true
+    # 是否显示文字标签
+    label: true
+  # 文章页面
+  post:
+    # 元数据位置: left / center
+    position: left
+    # 日期类型: created / updated / both
+    date_type: both
+    # 日期格式: date / relative
+    date_format: date
+    # 是否显示分类
+    categories: true
+    # 是否显示标签
+    tags: true
+    # 是否显示文字标签
+    label: true
+
+# 首页的副标题设置
+subtitle:
+  # 是否启用副标题
+  enable: true
+  # 是否启用打字机效果
+  effect: true
+
+toc:
+  # 是否在文章中显示目录
+  post: true
+  # 是否在页面中显示目录
+  page: false
+  # 是否显示目录编号
+  number: false
+  # 是否默认展开目录
+  expand: true
+  # 是否使用简洁风格（仅适用于文章）
+  style_simple: false
+  # 是否显示滚动百分比
+  scroll_percent: true
+
+post_copyright:
+  # 是否启用版权声明
+  enable: false
+  # 是否进行文章 URL 解码
+  decode: true
+
+aside:
+  card_announcement:
+    # 是否显示公告卡片
+    enable: false
+  card_author:
+    enable: true
+    description:
+    button:
+      enable: true
+      icon: fab fa-github
+      text: Follow Me
+      link: https://github.com/lxydamn
+search:
+  # Choose: algolia_search / local_search / docsearch
+  # leave it empty if you don't need search
+  use: local_search
+  placeholder: "Search..."
+
+# Local Search
+local_search:
+  # Preload the search data when the page loads.
+  preload: false
+  # Show top n results per article, show all results by setting to -1
+  top_n_per_article: 5
+  # Unescape html strings to the readable one.
+  unescape: false
+  CDN:
+
+copy:
+  enable: true
+  # Add the copyright information after copied content
+  copyright:
+    enable: true
+    limit_count: 100
+
+note:
+  # Note tag style values:
+  #  - simple    bs-callout old alert style. Default.
+  #  - modern    bs-callout new (v2-v3) alert style.
+  #  - flat      flat callout style with background, like on Mozilla or StackOverflow.
+  #  - disabled  disable all CSS styles import of note tag.
+  style: simple
+  icons: true
+  border_radius: 3
+  # Offset lighter of background in % for modern and flat styles (modern: -12 | 12; flat: -18 | 6).
+  # Offset also applied to label tag variables. This option can work with disabled note tag.
+  light_bg_offset: 0
+
+# A simple 404 page
+error_404:
+  enable: true
+  subtitle: "页面没有找到"
+  background:
+
+mermaid:
+  # 是否启用 Mermaid
+  enable: true
+  # 使用代码块编写 Mermaid 图表
+  code_write: false
+  # 内置主题: default / forest / dark / neutral
+  theme:
+    light: default
+    dark: dark
+
+snackbar:
+  enable: true
+  position: bottom-left
+  bg_light: "#49b1f5" #light mode时弹窗背景
+  bg_dark: "#2d3035" #dark mode时弹窗背景
+
+inject:
+  head:
+    - <link rel="stylesheet" href="/css/lxy.css">
+  bottom:
+    - <script src="/js/style.js"></script>
+
+# 在首页显示文章简介
+# 1: 描述
+# 2: 两者（如果存在描述，将显示描述，否则显示自动摘要）
+# 3: 自动摘要（默认）
+# false: 不显示文章简介
+index_post_content:
+  method: 2
+  # 如果设置 method 为 2 或 3，需要配置长度
+  length: 300
+
+# Code blocks
+code_blocks:
+  theme: darker
+  macStyle: true
+  height_limit: false
+  word_wrap: true

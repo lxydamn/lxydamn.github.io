@@ -1,0 +1,94 @@
+
+@font-face {
+  font-family: 'Maple';
+  src: url('/fonts/Maple.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; /* 推荐：提高加载体验 */
+}
+
+@font-face {
+  font-family: 'Maple';
+  src: url('/fonts/MapleBold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: bold;
+  font-display: swap; /* 推荐：提高加载体验 */
+}
+
+@font-face {
+  font-family: 'Maple';
+  src: url('/fonts/MapleItalic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap; /* 推荐：提高加载体验 */
+}
+
+@font-face {
+  font-family: 'Maple';
+  src: url('/fonts/MapleBoldItalic.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap; /* 推荐：提高加载体验 */
+}
+
+body {
+  font-family: 'Maple', monospace !important;
+}
+
+#site-info {
+  top: 30% !important;
+}
+
+#site-info-card {
+  background: var(--card-bg);
+  border-radius: 20px;
+  box-shadow: var(--card-box-shadow);
+  width: 50%;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+#site-info-avatar {
+  border-radius: 50%;
+  width: 96px;
+  height: 96px;
+}
+#site-info-table {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+
+#site-info-table a {
+  display: table-cell;
+}
+
+#article-summary-card { 
+  background: linear-gradient(45deg, rgb(94, 209, 232), #32567e);
+  border-radius: 20px;
+  padding: 2px; /* 控制边框宽度 */
+  margin-bottom: 20px;
+}
+
+#article-summary {
+  background: var(--card-bg);
+  border-radius: 18px; /* 略小于外层以显示边框效果 */
+  padding: 20px;
+}
+
+#summary-title {
+  font-size: 1.5em;
+}
+
+#summary-content code {
+  font-family: 'Maple';
+  font-size: 1em;
+  padding: 0.2em 0.4em;
+  color: #38a4fc;
+  border-radius: 5px;
+  background: #d7d6d6;
+  margin: 0 0.2em;
+}
+[data-theme='dark'] #summary-content code { 
+  background: #2c2c2c;
+}
