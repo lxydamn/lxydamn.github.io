@@ -3,8 +3,8 @@ title: glowroot 监控安装部署
 description: glowroot 简单安装、部署流程记录
 date: 2026-01-1 10:00:00
 tags:
-  - Jenkins
-  - CI/CD
+  - glowroot
+  - 运维
 categories:
   - tools
 ---
