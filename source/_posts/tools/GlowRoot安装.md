@@ -1,3 +1,14 @@
+---
+title: glowroot 监控安装部署
+description: glowroot 简单安装、部署流程记录
+date: 2026-01-1 10:00:00
+tags:
+  - Jenkins
+  - CI/CD
+categories:
+  - tools
+---
+
 官方 github 地址：[https://github.com/glowroot/glowroot](https://github.com/glowroot/glowroot)，
 
 WIKI：[https://github.com/glowroot/glowroot/wiki](https://github.com/glowroot/glowroot/wiki)
